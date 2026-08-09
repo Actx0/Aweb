@@ -69,7 +69,7 @@ useLandingPage(rootRef, props)
             <div>
               <p class="text-sm font-medium">Resources</p>
               <ul class="mt-3 space-y-2 text-sm text-muted">
-                <li><a :href="docsUrl" class="hover:text-theme-text" target="_blank" rel="noopener">Docs</a></li>
+                <li><a :href="docsUrl" class="hover:text-theme-text">Docs</a></li>
                 <li><router-link to="/status" class="hover:text-theme-text">Status</router-link></li>
               </ul>
             </div>

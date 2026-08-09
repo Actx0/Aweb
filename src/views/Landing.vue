@@ -280,7 +280,7 @@
             <div>
               <p class="text-sm font-medium">{{ $t('landing.footer.resources') }}</p>
               <ul class="mt-3 space-y-2 text-sm text-muted">
-                <li><a :href="docsUrl" class="hover:text-theme-text" target="_blank" rel="noopener">{{ $t('landing.footer.docs') }}</a></li>
+                <li><a :href="docsUrl" class="hover:text-theme-text">{{ $t('landing.footer.docs') }}</a></li>
                 <li><router-link to="/status" class="hover:text-theme-text">{{ $t('landing.footer.status') }}</router-link></li>
                 <li><a href="https://github.com/actx0/Actx0/issues" class="hover:text-theme-text" target="_blank" rel="noopener">{{ $t('landing.footer.support') }}</a></li>
               </ul>
