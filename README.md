@@ -1,4 +1,4 @@
-# Actx0 public website
+# Actx0 Website
 
 Vue 3 + Vite marketing site for Vercel (`actx0.com`).
 Product app CTAs point at `VITE_APP_URL` (default `https://app.actx0.com`).
