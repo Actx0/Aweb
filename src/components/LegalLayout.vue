@@ -48,7 +48,7 @@ onUnmounted(() => {
         <div class="flex flex-wrap gap-4">
           <router-link to="/privacy-policy" class="hover:text-theme-text">{{ $t('landing.footer.privacy') }}</router-link>
           <router-link to="/terms-of-use" class="hover:text-theme-text">{{ $t('landing.footer.terms') }}</router-link>
-          <a href="mailto:hello@clivern.com" class="hover:text-theme-text">{{ $t('landing.footer.contact') }}</a>
+          <a href="mailto:hello@actx0.com" class="hover:text-theme-text">{{ $t('landing.footer.contact') }}</a>
         </div>
       </div>
     </footer>

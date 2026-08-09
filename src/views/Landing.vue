@@ -228,7 +228,7 @@
             <h3 class="mt-1 text-2xl font-semibold">{{ $t('landing.pricing.enterprise_title') }}</h3>
             <p class="mt-2 text-sm text-muted">{{ $t('landing.pricing.enterprise_description') }}</p>
           </div>
-          <a href="mailto:hello@clivern.com" class="landing-btn-outline shrink-0">{{ $t('landing.pricing.enterprise_cta') }}</a>
+          <a href="mailto:hello@actx0.com" class="landing-btn-outline shrink-0">{{ $t('landing.pricing.enterprise_cta') }}</a>
         </div>
       </section>
 
@@ -288,7 +288,7 @@
             <div>
               <p class="text-sm font-medium">{{ $t('landing.footer.company') }}</p>
               <ul class="mt-3 space-y-2 text-sm text-muted">
-                <li><a href="mailto:hello@clivern.com" class="hover:text-theme-text">{{ $t('landing.footer.contact') }}</a></li>
+                <li><a href="mailto:hello@actx0.com" class="hover:text-theme-text">{{ $t('landing.footer.contact') }}</a></li>
                 <li><router-link to="/privacy-policy" class="hover:text-theme-text">{{ $t('landing.footer.privacy') }}</router-link></li>
                 <li><router-link to="/terms-of-use" class="hover:text-theme-text">{{ $t('landing.footer.terms') }}</router-link></li>
                 <li>
