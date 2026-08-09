@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import { getDocsUrl } from '@/lib/app'
 
 const routes = [
   {
@@ -50,8 +51,9 @@ const routes = [
   {
     path: '/docs',
     name: 'Docs',
-    component: () => import('@/views/Docs.vue'),
-    meta: { title: 'Docs', description: 'Actx0 documentation' },
+    beforeEnter() {
+      window.location.replace(getDocsUrl())
+    },
   },
   {
     path: '/:pathMatch(.*)*',
