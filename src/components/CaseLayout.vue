@@ -2,7 +2,7 @@
 import { ref } from 'vue'
 import LandingNav from '@/components/LandingNav.vue'
 import { openCookiePreferences } from '@/lib/cookies'
-import { getDocsUrl } from '@/lib/app'
+import { getDocsUrl, getStatusUrl } from '@/lib/app'
 import { useLandingPage, useStartUrl } from '@/lib/landingPage'
 
 const props = defineProps({
@@ -13,6 +13,7 @@ const props = defineProps({
 const rootRef = ref(null)
 const startUrl = useStartUrl()
 const docsUrl = getDocsUrl()
+const statusUrl = getStatusUrl()
 
 useLandingPage(rootRef, props)
 </script>
@@ -70,7 +71,7 @@ useLandingPage(rootRef, props)
               <p class="text-sm font-medium">Resources</p>
               <ul class="mt-3 space-y-2 text-sm text-muted">
                 <li><a :href="docsUrl" class="hover:text-theme-text">Docs</a></li>
-                <li><router-link to="/status" class="hover:text-theme-text">Status</router-link></li>
+                <li><a :href="statusUrl" class="hover:text-theme-text">Status</a></li>
               </ul>
             </div>
             <div>

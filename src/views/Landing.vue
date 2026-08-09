@@ -281,7 +281,7 @@
               <p class="text-sm font-medium">{{ $t('landing.footer.resources') }}</p>
               <ul class="mt-3 space-y-2 text-sm text-muted">
                 <li><a :href="docsUrl" class="hover:text-theme-text">{{ $t('landing.footer.docs') }}</a></li>
-                <li><router-link to="/status" class="hover:text-theme-text">{{ $t('landing.footer.status') }}</router-link></li>
+                <li><a :href="statusUrl" class="hover:text-theme-text">{{ $t('landing.footer.status') }}</a></li>
                 <li><a href="https://github.com/actx0/Actx0/issues" class="hover:text-theme-text" target="_blank" rel="noopener">{{ $t('landing.footer.support') }}</a></li>
               </ul>
             </div>
@@ -311,7 +311,7 @@ import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { highlightCode } from '@/lib/code'
 import { openCookiePreferences } from '@/lib/cookies'
-import { getDocsUrl, useStartUrl } from '@/lib/app'
+import { getDocsUrl, getStatusUrl, useStartUrl } from '@/lib/app'
 import LandingNav from '@/components/LandingNav.vue'
 
 const { t } = useI18n()
@@ -455,6 +455,7 @@ const highlightedCode = computed(() => highlightCode(codeSamples[codeTab.value],
 
 const startUrl = useStartUrl()
 const docsUrl = getDocsUrl()
+const statusUrl = getStatusUrl()
 
 const codeSamples = {
   python: `# pip install actx0

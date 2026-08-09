@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { getDocsUrl, useStartUrl } from '@/lib/app'
+import { getDocsUrl, getStatusUrl, useStartUrl } from '@/lib/app'
 
 defineProps({
   homePage: {
@@ -12,6 +12,7 @@ defineProps({
 const mobileOpen = ref(false)
 const startUrl = useStartUrl()
 const docsUrl = getDocsUrl()
+const statusUrl = getStatusUrl()
 
 function closeMobile() {
   mobileOpen.value = false
@@ -30,7 +31,7 @@ function closeMobile() {
         <component :is="homePage ? 'a' : 'router-link'" href="#developers" to="/#developers" class="landing-link">Developers</component>
         <component :is="homePage ? 'a' : 'router-link'" href="#pricing" to="/#pricing" class="landing-link">Pricing</component>
         <component :is="homePage ? 'a' : 'router-link'" href="#use-cases" to="/#use-cases" class="landing-link">Use Cases</component>
-        <router-link to="/status" class="landing-link">Status</router-link>
+        <a :href="statusUrl" class="landing-link">Status</a>
         <a :href="docsUrl" class="landing-link">Docs</a>
       </div>
 
@@ -55,7 +56,7 @@ function closeMobile() {
         <component :is="homePage ? 'a' : 'router-link'" href="#developers" to="/#developers" class="landing-link" @click="closeMobile">Developers</component>
         <component :is="homePage ? 'a' : 'router-link'" href="#pricing" to="/#pricing" class="landing-link" @click="closeMobile">Pricing</component>
         <component :is="homePage ? 'a' : 'router-link'" href="#use-cases" to="/#use-cases" class="landing-link" @click="closeMobile">Use Cases</component>
-        <router-link to="/status" class="landing-link" @click="closeMobile">Status</router-link>
+        <a :href="statusUrl" class="landing-link" @click="closeMobile">Status</a>
         <a :href="docsUrl" class="landing-link" @click="closeMobile">Docs</a>
         <a :href="startUrl" class="landing-btn w-fit" @click="closeMobile">Get Started</a>
       </div>

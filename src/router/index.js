@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { getDocsUrl } from '@/lib/app'
+import { getDocsUrl, getStatusUrl } from '@/lib/app'
 
 const routes = [
   {
@@ -45,8 +45,9 @@ const routes = [
   {
     path: '/status',
     name: 'Status',
-    component: () => import('@/views/Status.vue'),
-    meta: { title: 'Status', description: 'Actx0 platform status' },
+    beforeEnter() {
+      window.location.replace(getStatusUrl())
+    },
   },
   {
     path: '/docs',
