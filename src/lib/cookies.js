@@ -5,6 +5,8 @@ export const CONSENT_VERSION = 1
 
 export const showCookieBanner = ref(false)
 export const showCookiePreferences = ref(false)
+/** Bumps when consent is saved so UI can react to analytics opt-in/out. */
+export const consentRevision = ref(0)
 
 const defaultCategories = () => ({
   essential: true,
@@ -48,6 +50,7 @@ export function saveConsent(categories) {
   try {
     localStorage.setItem(CONSENT_STORAGE_KEY, JSON.stringify(payload))
   } catch (_) {}
+  consentRevision.value += 1
   showCookieBanner.value = false
   showCookiePreferences.value = false
   return payload
