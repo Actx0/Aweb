@@ -289,6 +289,8 @@
               <p class="text-sm font-medium">{{ $t('landing.footer.company') }}</p>
               <ul class="mt-3 space-y-2 text-sm text-muted">
                 <li><a href="mailto:hello@clivern.com" class="hover:text-theme-text">{{ $t('landing.footer.contact') }}</a></li>
+                <li><router-link to="/privacy-policy" class="hover:text-theme-text">{{ $t('landing.footer.privacy') }}</router-link></li>
+                <li><router-link to="/terms-of-use" class="hover:text-theme-text">{{ $t('landing.footer.terms') }}</router-link></li>
                 <li>
                   <button type="button" class="hover:text-theme-text" @click="openCookiePreferences">
                     {{ $t('cookies.settings_link') }}

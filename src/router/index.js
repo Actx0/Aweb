@@ -57,6 +57,24 @@ const routes = [
     },
   },
   {
+    path: '/privacy-policy',
+    name: 'PrivacyPolicy',
+    component: () => import('@/views/PrivacyPolicy.vue'),
+    meta: {
+      title: 'Privacy Policy',
+      description: 'How Actx0 collects, uses, and protects personal data.',
+    },
+  },
+  {
+    path: '/terms-of-use',
+    name: 'TermsOfUse',
+    component: () => import('@/views/TermsOfUse.vue'),
+    meta: {
+      title: 'Terms of Use',
+      description: 'Terms governing use of the Actx0 website and services.',
+    },
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'NotFound',
     redirect: '/',

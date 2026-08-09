@@ -15,9 +15,9 @@
           </p>
           <p id="cookie-banner-desc" class="mt-1.5 text-xs leading-relaxed text-theme-textLight">
             {{ $t('cookies.banner_desc') }}
-            <a :href="docsUrl" class="font-medium text-primary-800 hover:text-primary-900 underline-offset-2 hover:underline">
+            <router-link to="/privacy-policy" class="font-medium text-primary-800 hover:text-primary-900 underline-offset-2 hover:underline">
               {{ $t('cookies.learn_more') }}
-            </a>
+            </router-link>
           </p>
           <div class="mt-3 flex flex-col gap-2">
             <button type="button" class="btn-primary w-full px-3 py-1.5 text-sm" @click="onAcceptAll">
@@ -138,9 +138,6 @@ import {
   showCookieBanner,
   showCookiePreferences,
 } from '@/lib/cookies'
-import { getDocsUrl } from '@/lib/app'
-
-const docsUrl = getDocsUrl()
 
 const draft = reactive({
   preferences: false,

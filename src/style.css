@@ -492,6 +492,22 @@
     @apply text-xs font-semibold uppercase tracking-[0.2em] text-primary-600;
   }
 
+  .landing-page .legal-prose {
+    @apply space-y-8 text-base leading-relaxed text-theme-textLight;
+  }
+
+  .landing-page .legal-prose h2 {
+    @apply mb-3 text-xl font-semibold tracking-tight text-theme-text;
+  }
+
+  .landing-page .legal-prose p + p {
+    @apply mt-3;
+  }
+
+  .landing-page .legal-prose ul {
+    @apply mt-3 list-disc space-y-1.5 pl-5;
+  }
+
   .landing-page .text-muted {
     @apply text-theme-textLight;
   }

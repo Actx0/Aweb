@@ -1225,8 +1225,229 @@
       "status": "Statut",
       "support": "Support",
       "company": "Entreprise",
-      "contact": "Contact"
+      "contact": "Contact",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation"
     }
+  },
+  "privacy_page": {
+    "label": "Mentions légales",
+    "title": "Politique de confidentialité",
+    "description": "Comment Actx0 collecte, utilise et protège les données personnelles.",
+    "updated": "Dernière mise à jour : 9 août 2026",
+    "sections": [
+      {
+        "heading": "1. Qui nous sommes",
+        "paragraphs": [
+          "Actx0 (\"Actx0\", \"nous\", \"notre\") fournit une infrastructure mémoire pour agents et applications d'IA. Cette politique décrit comment nous collectons, utilisons, communiquons et protégeons les informations lorsque vous visitez actx0.com ou utilisez nos services cloud, sites, API et produits associés (les \"Services\").",
+          "Questions : hello@clivern.com."
+        ]
+      },
+      {
+        "heading": "2. Informations collectées",
+        "paragraphs": [
+          "Nous collectons les catégories suivantes :"
+        ],
+        "list": [
+          "Compte : nom, e-mail, identifiants d'authentification et détails d'espace de travail.",
+          "Facturation : informations de paiement et d'abonnement traitées par nos prestataires. Nous ne stockons pas le numéro complet de carte sur nos serveurs.",
+          "Contenu client : conversations, documents, mémoires, embeddings et autres données que vous ou vos agents envoient aux Services (\"Contenu client\").",
+          "Usage et appareil : adresse IP, type de navigateur, pages vues, URL de provenance, localisation approximative dérivée de l'IP, et événements d'usage nécessaires au fonctionnement et à la sécurité.",
+          "Cookies : cookies essentiels pour la connexion et la sécurité, plus cookies optionnels de préférences et d'analytique avec votre consentement."
+        ]
+      },
+      {
+        "heading": "3. Utilisation des informations",
+        "paragraphs": [
+          "Nous utilisons les informations pour :"
+        ],
+        "list": [
+          "Fournir, maintenir et améliorer les Services, y compris le stockage et la récupération de mémoire.",
+          "Authentifier les utilisateurs, sécuriser les comptes, prévenir les abus et faire respecter nos Conditions d'utilisation.",
+          "Traiter les paiements, gérer les abonnements et envoyer des avis liés au service.",
+          "Répondre au support et communiquer sur les mises à jour produit lorsque c'est approprié.",
+          "Comprendre l'usage agrégé et les performances (y compris via Vercel Web Analytics et Speed Insights lorsque les cookies d'analytique sont acceptés).",
+          "Respecter la loi et protéger les droits, la sécurité et les biens d'Actx0, de nos utilisateurs et du public."
+        ]
+      },
+      {
+        "heading": "4. Contenu client",
+        "paragraphs": [
+          "Vous (ou votre organisation) contrôlez le Contenu client. Nous le traitons pour fournir les Services demandés et selon votre contrat.",
+          "Nous ne vendons pas le Contenu client. Nous ne l'utilisons pas pour entraîner des modèles de fondation publics. L'accès du personnel Actx0 est limité au support, à la sécurité, à la prévention des abus et à l'exploitation du service, sous des contrôles de confidentialité."
+        ]
+      },
+      {
+        "heading": "5. Partage des informations",
+        "paragraphs": [
+          "Nous pouvons partager des informations avec :"
+        ],
+        "list": [
+          "Des prestataires qui nous aident à héberger, facturer, envoyer des e-mails, surveiller l'infrastructure ou analyser l'usage, sous obligations contractuelles.",
+          "Les administrateurs et membres d'espace de travail selon les rôles et clés d'accès configurés.",
+          "Les autorités lorsque la loi, une procédure ou des intérêts vitaux l'exigent.",
+          "Une entité successeur en cas de fusion, acquisition ou cession d'actifs, avec information lorsque requis."
+        ]
+      },
+      {
+        "heading": "6. Cookies",
+        "paragraphs": [
+          "Les cookies essentiels sont nécessaires à l'authentification, à la sécurité et aux fonctionnalités de base. Les cookies de préférences et d'analytique sont optionnels et ne sont déposés qu'avec votre accord.",
+          "Vous pouvez modifier vos choix à tout moment via Paramètres cookies dans le pied de page."
+        ]
+      },
+      {
+        "heading": "7. Conservation",
+        "paragraphs": [
+          "Nous conservons les données de compte et de facturation tant que le compte est actif et aussi longtemps que nécessaire pour des raisons légales, fiscales et comptables. Le Contenu client est conservé selon la configuration et la rétention de votre espace jusqu'à suppression ou fermeture du compte, sous réserve de sauvegardes et de obligations légales."
+        ]
+      },
+      {
+        "heading": "8. Sécurité",
+        "paragraphs": [
+          "Nous mettons en œuvre des mesures administratives, techniques et organisationnelles destinées à protéger les informations. Aucun système n'est parfaitement sûr ; utilisez des clés API et des comptes avec prudence."
+        ]
+      },
+      {
+        "heading": "9. Transferts internationaux",
+        "paragraphs": [
+          "Nous pouvons traiter des informations dans d'autres pays que le vôtre. Lorsque c'est requis, nous utilisons des garanties appropriées pour les transferts."
+        ]
+      },
+      {
+        "heading": "10. Vos droits",
+        "paragraphs": [
+          "Selon votre lieu de résidence, vous pouvez disposer de droits d'accès, de rectification, d'effacement, d'export, d'opposition, de limitation et de retrait du consentement. Pour les exercer : hello@clivern.com. Vous pouvez aussi saisir une autorité de contrôle."
+        ]
+      },
+      {
+        "heading": "11. Enfants",
+        "paragraphs": [
+          "Les Services ne s'adressent pas aux enfants de moins de 16 ans et nous ne collectons pas sciemment leurs données. Contactez-nous si vous pensez qu'un enfant nous a fourni des données personnelles."
+        ]
+      },
+      {
+        "heading": "12. Modifications",
+        "paragraphs": [
+          "Nous pouvons mettre à jour cette politique. La version révisée sera publiée sur cette page avec une date de mise à jour. Les changements importants pourront être communiqués par e-mail ou dans le produit."
+        ]
+      },
+      {
+        "heading": "13. Contact",
+        "paragraphs": [
+          "Demandes de confidentialité Actx0 : hello@clivern.com."
+        ]
+      }
+    ]
+  },
+  "terms_page": {
+    "label": "Mentions légales",
+    "title": "Conditions d'utilisation",
+    "description": "Conditions régissant l'utilisation du site et des services Actx0.",
+    "updated": "Dernière mise à jour : 9 août 2026",
+    "sections": [
+      {
+        "heading": "1. Accord",
+        "paragraphs": [
+          "Les présentes Conditions d'utilisation (\"Conditions\") régissent votre accès à actx0.com et aux services cloud Actx0, API, SDK, documentation et offres associées (les \"Services\"). En y accédant ou en les utilisant, vous acceptez ces Conditions.",
+          "Si vous agissez pour une organisation, vous déclarez avoir le pouvoir de l'engager, et \"vous\" inclut cette organisation."
+        ]
+      },
+      {
+        "heading": "2. Les Services",
+        "paragraphs": [
+          "Actx0 fournit une infrastructure mémoire pour agents et applications d'IA, y compris le stockage, la récupération et les outils de gestion. Les fonctionnalités, limites et disponibilités varient selon les plans et peuvent évoluer.",
+          "Nous pouvons modifier, suspendre ou interrompre des parties des Services avec un préavis raisonnable lorsque c'est possible. Les fonctionnalités bêta sont fournies en l'état."
+        ]
+      },
+      {
+        "heading": "3. Comptes et accès",
+        "paragraphs": [
+          "Vous devez fournir des informations exactes et protéger identifiants, clés d'accès et permissions. Vous êtes responsable de l'activité sous vos comptes et clés.",
+          "Signalez rapidement tout accès non autorisé à hello@clivern.com. Nous pouvons suspendre l'accès pour protéger les Services ou d'autres utilisateurs."
+        ]
+      },
+      {
+        "heading": "4. Contenu client et licences",
+        "paragraphs": [
+          "Vous conservez la propriété du Contenu client soumis aux Services. Vous accordez à Actx0 une licence mondiale non exclusive pour héberger, traiter, transmettre et afficher ce contenu uniquement afin de fournir et sécuriser les Services.",
+          "Vous déclarez disposer des droits nécessaires et que votre usage respecte la loi applicable, y compris la vie privée et la propriété intellectuelle."
+        ]
+      },
+      {
+        "heading": "5. Usage acceptable",
+        "paragraphs": [
+          "Il est interdit de :"
+        ],
+        "list": [
+          "Utiliser les Services à des fins illégales, nuisibles ou frauduleuses.",
+          "Tenter d'accéder sans autorisation à des systèmes, comptes ou données.",
+          "Perturber les Services, notamment via un trafic abusif ou des logiciels malveillants.",
+          "Procéder à de l'ingénierie inverse sauf lorsque la loi l'interdit de restreindre.",
+          "Revendre les Services sauf autorisation expresse de votre plan ou d'un contrat écrit.",
+          "Envoyer du contenu illégal ou sans droits de traitement."
+        ]
+      },
+      {
+        "heading": "6. Plans, frais et taxes",
+        "paragraphs": [
+          "Les plans payants sont facturés selon les tarifs affichés à l'achat ou dans votre espace. Les frais sont en principe non remboursables sauf obligation légale ou mention contraire.",
+          "Vous êtes responsable des taxes applicables. Nous pouvons modifier les prix avec préavis pour les périodes à venir."
+        ]
+      },
+      {
+        "heading": "7. Propriété intellectuelle",
+        "paragraphs": [
+          "Actx0 et ses concédants détiennent les Services, y compris logiciels, marques et documentation. Ces Conditions ne vous autorisent pas à utiliser les marques Actx0 sauf pour identifier loyalement les Services.",
+          "Les retours que vous fournissez peuvent être utilisés par Actx0 sans obligation envers vous."
+        ]
+      },
+      {
+        "heading": "8. Services tiers",
+        "paragraphs": [
+          "Les Services peuvent interagir avec des produits tiers (identité, paiement, hébergement). Leur usage est soumis à leurs conditions, et Actx0 n'est pas responsable de ces produits."
+        ]
+      },
+      {
+        "heading": "9. Avertissements",
+        "paragraphs": [
+          "LES SERVICES SONT FOURNIS \"EN L'ÉTAT\" ET \"SELON DISPONIBILITÉ\", SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU IMPLICITE, Y COMPRIS DE QUALITÉ MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER ET DE NON-CONTREFAÇON, DANS LES LIMITES AUTORISÉES PAR LA LOI.",
+          "Nous ne garantissons pas un service ininterrompu, sans erreur, ni que le Contenu client sera toujours préservé sans perte."
+        ]
+      },
+      {
+        "heading": "10. Limitation de responsabilité",
+        "paragraphs": [
+          "DANS LES LIMITES AUTORISÉES PAR LA LOI, ACTX0 ET SES AFFILIÉS NE SERONT PAS RESPONSABLES DES DOMMAGES INDIRECTS, ACCESSOIRES, SPÉCIAUX, CONSÉCUTIFS OU PUNITIFS, NI DES PERTES DE PROFITS, REVENUS, DONNÉES OU CLIENTÈLE.",
+          "NOTRE RESPONSABILITÉ TOTALE LIÉE AUX SERVICES NE DÉPASSERA PAS LES MONTANTS QUE VOUS AVEZ PAYÉS À ACTX0 AU COURS DES DOUZE (12) MOIS PRÉCÉDANT LA RÉCLAMATION, OU CENT DOLLARS US (100 USD) SI VOUS N'AVEZ PAS D'OBLIGATION PAYANTE."
+        ]
+      },
+      {
+        "heading": "11. Indemnisation",
+        "paragraphs": [
+          "Vous indemniserez Actx0 contre les réclamations liées à votre Contenu client, à un usage contraire aux présentes Conditions, ou à une violation de la loi ou de droits de tiers."
+        ]
+      },
+      {
+        "heading": "12. Résiliation",
+        "paragraphs": [
+          "Vous pouvez cesser d'utiliser les Services à tout moment et fermer votre compte sous réserve des frais dus. Nous pouvons suspendre ou résilier l'accès en cas de manquement matériel ou pour des raisons de sécurité ou légales.",
+          "Les dispositions qui doivent survivre (propriété, avertissements, limitations, indemnisation) survivent à la résiliation."
+        ]
+      },
+      {
+        "heading": "13. Modifications",
+        "paragraphs": [
+          "Nous pouvons mettre à jour ces Conditions en publiant une version révisée sur cette page. L'usage continu après l'entrée en vigueur vaut acceptation."
+        ]
+      },
+      {
+        "heading": "14. Contact",
+        "paragraphs": [
+          "Questions sur ces Conditions : hello@clivern.com."
+        ]
+      }
+    ]
   },
   "cases": {
     "shared": {

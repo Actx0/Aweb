@@ -1225,8 +1225,229 @@
       "status": "Status",
       "support": "Support",
       "company": "Company",
-      "contact": "Contact"
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
     }
+  },
+  "privacy_page": {
+    "label": "Legal",
+    "title": "Privacy Policy",
+    "description": "How Actx0 collects, uses, and protects personal data.",
+    "updated": "Last updated: August 9, 2026",
+    "sections": [
+      {
+        "heading": "1. Who we are",
+        "paragraphs": [
+          "Actx0 (\"Actx0\", \"we\", \"us\", or \"our\") provides drop-in memory infrastructure for AI agents and applications. This Privacy Policy explains how we collect, use, disclose, and protect information when you visit actx0.com or use our cloud services, websites, APIs, and related products (the \"Services\").",
+          "Questions about this policy: hello@clivern.com."
+        ]
+      },
+      {
+        "heading": "2. Information we collect",
+        "paragraphs": [
+          "We collect information in the following categories:"
+        ],
+        "list": [
+          "Account information: name, email address, authentication identifiers, and workspace details you provide when you register or manage a team.",
+          "Billing information: payment and subscription details processed by our payment providers. We do not store full card numbers on our servers.",
+          "Customer content: conversations, documents, memories, embeddings, and other data you or your agents send to the Services (\"Customer Content\").",
+          "Usage and device data: IP address, browser type, pages viewed, referring URLs, approximate location derived from IP, and product usage events needed to operate and secure the Services.",
+          "Cookies and similar technologies: essential cookies for sign-in and security, plus optional preference and analytics cookies when you consent."
+        ]
+      },
+      {
+        "heading": "3. How we use information",
+        "paragraphs": [
+          "We use information to:"
+        ],
+        "list": [
+          "Provide, maintain, and improve the Services, including memory storage, retrieval, and related APIs.",
+          "Authenticate users, secure accounts, prevent abuse, and enforce our Terms of Use.",
+          "Process payments, manage subscriptions, and send service-related notices.",
+          "Respond to support requests and communicate about product updates when appropriate.",
+          "Understand aggregate usage and performance (including via Vercel Web Analytics and Speed Insights when analytics cookies are accepted).",
+          "Comply with law and protect the rights, safety, and property of Actx0, our users, and the public."
+        ]
+      },
+      {
+        "heading": "4. Customer Content",
+        "paragraphs": [
+          "You (or your organization) control Customer Content. We process Customer Content to provide the Services you request and as described in your agreement with us.",
+          "We do not sell Customer Content. We do not use Customer Content to train public foundation models. Access by Actx0 personnel is limited to what is needed for support, security, abuse prevention, and service operations, subject to confidentiality controls."
+        ]
+      },
+      {
+        "heading": "5. Sharing of information",
+        "paragraphs": [
+          "We may share information with:"
+        ],
+        "list": [
+          "Service providers who help us host, process payments, send email, monitor infrastructure, or analyze product usage under contractual confidentiality and data-protection obligations.",
+          "Workspace admins and members according to the roles and access keys configured in your account.",
+          "Authorities when required by law, legal process, or to protect vital interests.",
+          "A successor entity in connection with a merger, acquisition, or sale of assets, with notice where required."
+        ]
+      },
+      {
+        "heading": "6. Cookies",
+        "paragraphs": [
+          "Essential cookies are required for authentication, security, and core platform features. Preference and analytics cookies are optional and only set when you accept them via our cookie banner or settings.",
+          "You can change cookie choices at any time using Cookie settings in the website footer."
+        ]
+      },
+      {
+        "heading": "7. Data retention",
+        "paragraphs": [
+          "We retain account and billing records for as long as your account is active and as needed for legal, tax, and accounting purposes. Customer Content is retained according to your workspace configuration and retention settings until you delete it or close your account, subject to backup and legal hold exceptions."
+        ]
+      },
+      {
+        "heading": "8. Security",
+        "paragraphs": [
+          "We implement administrative, technical, and organizational measures designed to protect information. No method of transmission or storage is completely secure; we encourage strong account hygiene and careful handling of API keys."
+        ]
+      },
+      {
+        "heading": "9. International transfers",
+        "paragraphs": [
+          "We may process information in countries other than where you live. Where required, we use appropriate safeguards for cross-border transfers."
+        ]
+      },
+      {
+        "heading": "10. Your rights",
+        "paragraphs": [
+          "Depending on your location, you may have rights to access, correct, delete, or export personal data, object to or restrict certain processing, and withdraw consent. To exercise these rights, email hello@clivern.com. You may also have the right to lodge a complaint with a supervisory authority."
+        ]
+      },
+      {
+        "heading": "11. Children",
+        "paragraphs": [
+          "The Services are not directed to children under 16, and we do not knowingly collect personal data from them. If you believe a child has provided us personal data, contact us and we will take appropriate steps."
+        ]
+      },
+      {
+        "heading": "12. Changes",
+        "paragraphs": [
+          "We may update this Privacy Policy from time to time. We will post the revised version on this page and update the \"Last updated\" date. Material changes may be communicated by email or in-product notice where appropriate."
+        ]
+      },
+      {
+        "heading": "13. Contact",
+        "paragraphs": [
+          "Actx0 privacy inquiries: hello@clivern.com."
+        ]
+      }
+    ]
+  },
+  "terms_page": {
+    "label": "Legal",
+    "title": "Terms of Use",
+    "description": "Terms governing use of the Actx0 website and services.",
+    "updated": "Last updated: August 9, 2026",
+    "sections": [
+      {
+        "heading": "1. Agreement",
+        "paragraphs": [
+          "These Terms of Use (\"Terms\") govern your access to and use of actx0.com and the Actx0 cloud services, APIs, SDKs, documentation, and related offerings (the \"Services\"). By accessing or using the Services, you agree to these Terms.",
+          "If you use the Services on behalf of an organization, you represent that you have authority to bind that organization, and \"you\" includes that organization."
+        ]
+      },
+      {
+        "heading": "2. The Services",
+        "paragraphs": [
+          "Actx0 provides memory infrastructure for AI agents and applications, including storage, retrieval, and related management tools. Features, limits, and availability may vary by plan and may change as we improve the product.",
+          "We may modify, suspend, or discontinue parts of the Services with reasonable notice when practicable. Beta or preview features may be unstable and are provided as-is."
+        ]
+      },
+      {
+        "heading": "3. Accounts and access",
+        "paragraphs": [
+          "You must provide accurate registration information and keep credentials, access keys, and workspace permissions secure. You are responsible for activity under your accounts and keys.",
+          "Notify us promptly at hello@clivern.com if you suspect unauthorized access. We may suspend access to protect the Services or other users."
+        ]
+      },
+      {
+        "heading": "4. Customer Content and licenses",
+        "paragraphs": [
+          "You retain ownership of Customer Content you submit to the Services. You grant Actx0 a worldwide, non-exclusive license to host, process, transmit, and display Customer Content solely to provide and secure the Services.",
+          "You represent that you have all rights needed to submit Customer Content and that your use of the Services complies with applicable law, including privacy and intellectual-property laws."
+        ]
+      },
+      {
+        "heading": "5. Acceptable use",
+        "paragraphs": [
+          "You may not:"
+        ],
+        "list": [
+          "Use the Services for unlawful, harmful, or fraudulent activity.",
+          "Attempt to gain unauthorized access to systems, accounts, or data.",
+          "Interfere with or disrupt the Services, including via abusive traffic or malware.",
+          "Reverse engineer the Services except to the extent such restriction is prohibited by law.",
+          "Resell or provide the Services to third parties except as expressly allowed by your plan or a written agreement.",
+          "Upload content that is illegal or that you do not have rights to process."
+        ]
+      },
+      {
+        "heading": "6. Plans, fees, and taxes",
+        "paragraphs": [
+          "Paid plans are billed according to the pricing shown at purchase or in your workspace. Fees are generally non-refundable except where required by law or expressly stated otherwise.",
+          "You are responsible for applicable taxes. We may change prices with notice for upcoming billing periods."
+        ]
+      },
+      {
+        "heading": "7. Intellectual property",
+        "paragraphs": [
+          "Actx0 and its licensors own the Services, including software, branding, and documentation. These Terms do not grant you any right to use Actx0 trademarks except as needed to identify the Services truthfully.",
+          "Feedback you provide may be used by Actx0 without obligation to you."
+        ]
+      },
+      {
+        "heading": "8. Third-party services",
+        "paragraphs": [
+          "The Services may interoperate with third-party products (for example, identity providers, payment processors, or hosting). Your use of third-party services is subject to their terms, and Actx0 is not responsible for third-party products."
+        ]
+      },
+      {
+        "heading": "9. Disclaimers",
+        "paragraphs": [
+          "THE SERVICES ARE PROVIDED \"AS IS\" AND \"AS AVAILABLE\" WITHOUT WARRANTIES OF ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT, TO THE MAXIMUM EXTENT PERMITTED BY LAW.",
+          "We do not warrant that the Services will be uninterrupted, error-free, or free of harmful components, or that Customer Content will always be preserved without loss."
+        ]
+      },
+      {
+        "heading": "10. Limitation of liability",
+        "paragraphs": [
+          "TO THE MAXIMUM EXTENT PERMITTED BY LAW, ACTX0 AND ITS AFFILIATES WILL NOT BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR FOR LOST PROFITS, REVENUE, DATA, OR GOODWILL.",
+          "OUR AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THE SERVICES WILL NOT EXCEED THE AMOUNTS YOU PAID TO ACTX0 FOR THE SERVICES IN THE TWELVE (12) MONTHS BEFORE THE CLAIM, OR ONE HUNDRED US DOLLARS (US$100) IF YOU HAVE NOT HAD ANY PAID OBLIGATIONS."
+        ]
+      },
+      {
+        "heading": "11. Indemnity",
+        "paragraphs": [
+          "You will defend and indemnify Actx0 against claims arising from your Customer Content, your use of the Services in violation of these Terms, or your violation of law or third-party rights."
+        ]
+      },
+      {
+        "heading": "12. Termination",
+        "paragraphs": [
+          "You may stop using the Services at any time and may close your account subject to any outstanding fees. We may suspend or terminate access if you materially breach these Terms or if required for security or legal reasons.",
+          "Provisions that by their nature should survive (including ownership, disclaimers, limitations of liability, and indemnity) will survive termination."
+        ]
+      },
+      {
+        "heading": "13. Changes to these Terms",
+        "paragraphs": [
+          "We may update these Terms by posting a revised version on this page and updating the \"Last updated\" date. Continued use after changes become effective constitutes acceptance of the revised Terms."
+        ]
+      },
+      {
+        "heading": "14. Contact",
+        "paragraphs": [
+          "Questions about these Terms: hello@clivern.com."
+        ]
+      }
+    ]
   },
   "cases": {
     "shared": {
