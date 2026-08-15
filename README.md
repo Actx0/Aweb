@@ -20,3 +20,4 @@ npm run dev
 - Optional: set `VITE_STATUS_URL` (default `https://status.actx0.com`)
 - Enable **Web Analytics** and **Speed Insights** in the Vercel project dashboard; both load after visitors accept analytics cookies
 - Google Analytics (`G-2YXJJ248DY`) also loads only after analytics cookie consent
+- Submit `https://actx0.com/sitemap.xml` in Google Search Console (`robots.txt` already references it)
