@@ -98,9 +98,6 @@
                 <div class="w-full space-y-3 font-mono text-xs">
                   <div class="rounded-lg bg-theme-hover p-4 text-primary-500">{{ $t('landing.developers.efficiency.before') }}</div>
                   <div class="rounded-lg border border-primary-300 bg-primary-50 p-4 text-primary-800">{{ $t('landing.developers.efficiency.after') }}</div>
-                  <div class="h-2 overflow-hidden rounded-full bg-primary-200">
-                    <div class="h-full w-[10%] rounded-full bg-primary-800" />
-                  </div>
                   <p class="text-center text-primary-500">{{ $t('landing.developers.efficiency.compression') }}</p>
                 </div>
               </div>
@@ -282,7 +279,7 @@
               <ul class="mt-3 space-y-2 text-sm text-muted">
                 <li><a :href="docsUrl" class="hover:text-theme-text">{{ $t('landing.footer.docs') }}</a></li>
                 <li><a :href="statusUrl" class="hover:text-theme-text">{{ $t('landing.footer.status') }}</a></li>
-                <li><a href="https://github.com/actx0/Actx0/issues" class="hover:text-theme-text" target="_blank" rel="noopener">{{ $t('landing.footer.support') }}</a></li>
+                <li><a href="mailto:hello@actx0.com" class="hover:text-theme-text">{{ $t('landing.footer.support') }}</a></li>
               </ul>
             </div>
             <div>
@@ -423,7 +420,7 @@ const plans = [
       'landing.pricing.plans.starter.feature_3',
       'landing.pricing.plans.starter.feature_4',
     ],
-    ctaKey: 'landing.pricing.cta_trial',
+    ctaKey: 'landing.pricing.cta_paid',
   },
   {
     id: 'growth',
@@ -436,12 +433,12 @@ const plans = [
       'landing.pricing.plans.growth.feature_3',
       'landing.pricing.plans.growth.feature_4',
     ],
-    ctaKey: 'landing.pricing.cta_trial',
+    ctaKey: 'landing.pricing.cta_paid',
   },
   {
     id: 'pro',
     nameKey: 'landing.pricing.plans.pro.name',
-    price: '€219',
+    price: '$219',
     descriptionKey: 'landing.pricing.plans.pro.description',
     featureKeys: [
       'landing.pricing.plans.pro.feature_1',
@@ -449,7 +446,7 @@ const plans = [
       'landing.pricing.plans.pro.feature_3',
       'landing.pricing.plans.pro.feature_4',
     ],
-    ctaKey: 'landing.pricing.cta_trial',
+    ctaKey: 'landing.pricing.cta_paid',
   },
 ]
 
@@ -460,79 +457,104 @@ const docsUrl = getDocsUrl()
 const statusUrl = getStatusUrl()
 
 const codeSamples = {
-  python: `# pip install actx0
-from actx0 import MemoryClient
+  python: `# pip install pctx0
+from pctx0 import Pctx0Client
 
-client = MemoryClient(
-    api_key="your-access-key",
-    workspace="your-workspace",
+client = Pctx0Client(
+    access_key="YOUR_ACCESS_KEY",
+    workspace_id="YOUR_WORKSPACE_ID",
 )
 
-# Store a memory from conversation
-client.add(
-    messages=[
-        {"role": "user", "content": "I'm allergic to nuts."},
-        {"role": "assistant", "content": "Noted. I'll remember that."},
+agent = client.agent.create(
+    name="Support bot",
+    description="Handles customer tickets",
+)
+session = client.session.create(
+    agent.id,
+    external_id="demo-1",
+    title="Demo session",
+)
+
+client.message.create(
+    agent.id,
+    session.id,
+    [
+        {"role": "user", "content": "My name is Joe"},
+        {"role": "assistant", "content": "Nice to meet you, Joe!"},
     ],
-    agent_id="support-bot",
 )
 
-# Retrieve relevant context at inference time
-results = client.search(
-    "What are my dietary restrictions?",
-    agent_id="support-bot",
+hits = client.memory.search(
+    agent.id,
+    session.id,
+    query="What is my name?",
     limit=5,
 )
-print(results)`,
-  nodejs: `// npm install actx0
-import { MemoryClient } from "actx0";
+print(hits)`,
+  nodejs: `// npm install @actx0/nctx0
+import { Nctx0Client } from "@actx0/nctx0";
 
-const client = new MemoryClient({
-  apiKey: "your-access-key",
-  workspace: "your-workspace",
+const client = new Nctx0Client({
+  accessKey: "YOUR_ACCESS_KEY",
+  workspaceId: "YOUR_WORKSPACE_ID",
 });
 
-// Store a memory from conversation
-await client.add({
-  messages: [
-    { role: "user", content: "I'm allergic to nuts." },
-    { role: "assistant", content: "Noted. I'll remember that." },
-  ],
-  agentId: "support-bot",
+const agent = await client.agent.create({
+  name: "Support bot",
+  description: "Handles customer tickets",
+});
+const session = await client.session.create(agent.id, {
+  externalId: "demo-1",
+  title: "Demo session",
 });
 
-// Retrieve relevant context at inference time
-const results = await client.search(
-  "What are my dietary restrictions?",
-  { agentId: "support-bot", limit: 5 },
-);
-console.log(results);`,
-  curl: `# Search agent memory
-curl -X POST "https://your-instance/api/v1/memory/search" \\
-  -H "Authorization: Bearer YOUR_ACCESS_KEY" \\
+await client.message.create(agent.id, session.id, [
+  { role: "user", content: "My name is Joe" },
+  { role: "assistant", content: "Nice to meet you, Joe!" },
+]);
+
+const hits = await client.memory.search(agent.id, session.id, {
+  query: "What is my name?",
+  limit: 5,
+});
+console.log(hits);`,
+  curl: `# Store user + assistant turns (extraction runs on user messages)
+curl -X POST "https://app.actx0.com/api/v1/workspaces/$ACTX0_WORKSPACE_ID/agents/$AGENT_ID/sessions/$SESSION_ID/messages/batch" \\
+  -H "X-Access-Key: $ACTX0_ACCESS_KEY" \\
   -H "Content-Type: application/json" \\
-  -d '{
-    "query": "What are my dietary restrictions?",
-    "agent_id": "support-bot",
-    "limit": 5
-  }'`,
-  go: `// go get github.com/actx0/Actx0/sdk/go
-client, _ := actx0.New(actx0.Config{
-    APIKey:    "your-access-key",
-    Workspace: "your-workspace",
+  -d '{"messages": [
+    {"role": "user", "content": "My name is Joe"},
+    {"role": "assistant", "content": "Nice to meet you, Joe!"}
+  ]}'
+
+# Search session memories
+curl -X POST "https://app.actx0.com/api/v1/workspaces/$ACTX0_WORKSPACE_ID/agents/$AGENT_ID/sessions/$SESSION_ID/memories/search" \\
+  -H "X-Access-Key: $ACTX0_ACCESS_KEY" \\
+  -H "Content-Type: application/json" \\
+  -d '{"query": "What is my name?", "limit": 5}'`,
+  go: `// go get github.com/Actx0/Gctx0
+client := gctx0.NewClient(
+    gctx0.WithAccessKey("YOUR_ACCESS_KEY"),
+    gctx0.WithWorkspaceId("YOUR_WORKSPACE_ID"),
+)
+defer client.Close()
+ctx := context.Background()
+
+agent, _ := client.Agent.Create(ctx, "Support bot", "Handles customer tickets", gctx0.AgentWriteOptions{})
+session, _ := client.Session.Create(
+    ctx,
+    agent.Id,
+    gctx0.SessionLookup{ExternalID: "demo-1"},
+    "Demo session",
+)
+
+_, _ = client.Message.CreateBatch(ctx, agent.Id, session.Id, []gctx0.MessageInput{
+    {Role: gctx0.MessageRoleUser, Content: "My name is Joe"},
+    {Role: gctx0.MessageRoleAssistant, Content: "Nice to meet you, Joe!"},
 })
 
-_, _ = client.Add(ctx, actx0.AddRequest{
-    AgentID: "support-bot",
-    Messages: []actx0.Message{
-        {Role: "user", Content: "I'm allergic to nuts."},
-    },
-})
-
-results, _ := client.Search(ctx, actx0.SearchRequest{
-    Query:   "What are my dietary restrictions?",
-    AgentID: "support-bot",
-})`,
+hits, _ := client.Memory.Search(ctx, agent.Id, session.Id, "What is my name?", 5)
+fmt.Println(hits)`,
 }
 
 let revealObserver

@@ -26,6 +26,7 @@ useLandingPage(rootRef, props)
     <LandingNav />
 
     <main>
+      <p class="mx-auto max-w-6xl px-6 pt-10 text-sm text-muted">{{ $t('cases.shared.disclaimer') }}</p>
       <slot :start-url="startUrl" />
     </main>
 
@@ -33,14 +34,14 @@ useLandingPage(rootRef, props)
       <div class="pointer-events-none absolute inset-0 bg-hero-glow" />
       <div class="relative mx-auto max-w-3xl px-6 text-center">
         <h2 class="reveal text-4xl font-semibold tracking-tight md:text-5xl">
-          Give Your AI a <span class="hero-gradient-text">Memory</span>
+          {{ $t('landing.cta.title_before') }} <span class="hero-gradient-text">{{ $t('landing.cta.title_highlight') }}</span>
         </h2>
         <p class="reveal mt-4 text-lg text-muted">
-          Your agents forget. Actx0 remembers, so every conversation picks up where the last one left off.
+          {{ $t('landing.cta.subtitle') }}
         </p>
         <div class="reveal mt-8 flex flex-wrap items-center justify-center gap-3">
-          <a :href="startUrl" class="landing-btn">Get Started</a>
-          <router-link to="/#pricing" class="landing-btn-outline">See Pricing</router-link>
+          <a :href="startUrl" class="landing-btn">{{ $t('landing.cta.get_started') }}</a>
+          <router-link to="/#pricing" class="landing-btn-outline">{{ $t('landing.cta.see_pricing') }}</router-link>
         </div>
       </div>
     </section>
@@ -53,31 +54,31 @@ useLandingPage(rootRef, props)
               <img src="/logo.png" alt="Actx0" class="h-7 w-auto" />
               <span class="font-semibold">Actx0</span>
             </router-link>
-            <p class="mt-3 max-w-xs text-sm text-muted">Zero latency memory infrastructure for AI agents and apps.</p>
+            <p class="mt-3 max-w-xs text-sm text-muted">{{ $t('landing.footer.tagline') }}</p>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:grid-cols-3">
             <div>
-              <p class="text-sm font-medium">Use Cases</p>
+              <p class="text-sm font-medium">{{ $t('landing.footer.use_cases') }}</p>
               <ul class="mt-3 space-y-2 text-sm text-muted">
-                <li><router-link to="/cases/customer-support" class="hover:text-theme-text">Customer Support</router-link></li>
-                <li><router-link to="/cases/sales" class="hover:text-theme-text">Sales & CRM</router-link></li>
-                <li><router-link to="/cases/healthcare" class="hover:text-theme-text">Healthcare</router-link></li>
-                <li><router-link to="/cases/education" class="hover:text-theme-text">Education</router-link></li>
-                <li><router-link to="/cases/devtools" class="hover:text-theme-text">DevTools</router-link></li>
-                <li><router-link to="/cases/e-commerce" class="hover:text-theme-text">E-Commerce</router-link></li>
+                <li><router-link to="/cases/customer-support" class="hover:text-theme-text">{{ $t('landing.use_cases.customer_support.label') }}</router-link></li>
+                <li><router-link to="/cases/sales" class="hover:text-theme-text">{{ $t('landing.use_cases.sales.label') }}</router-link></li>
+                <li><router-link to="/cases/healthcare" class="hover:text-theme-text">{{ $t('landing.use_cases.healthcare.label') }}</router-link></li>
+                <li><router-link to="/cases/education" class="hover:text-theme-text">{{ $t('landing.use_cases.education.label') }}</router-link></li>
+                <li><router-link to="/cases/devtools" class="hover:text-theme-text">{{ $t('landing.use_cases.devtools.label') }}</router-link></li>
+                <li><router-link to="/cases/e-commerce" class="hover:text-theme-text">{{ $t('landing.use_cases.ecommerce.label') }}</router-link></li>
               </ul>
             </div>
             <div>
-              <p class="text-sm font-medium">Resources</p>
+              <p class="text-sm font-medium">{{ $t('landing.footer.resources') }}</p>
               <ul class="mt-3 space-y-2 text-sm text-muted">
-                <li><a :href="docsUrl" class="hover:text-theme-text">Docs</a></li>
-                <li><a :href="statusUrl" class="hover:text-theme-text">Status</a></li>
+                <li><a :href="docsUrl" class="hover:text-theme-text">{{ $t('landing.footer.docs') }}</a></li>
+                <li><a :href="statusUrl" class="hover:text-theme-text">{{ $t('landing.footer.status') }}</a></li>
               </ul>
             </div>
             <div>
-              <p class="text-sm font-medium">Company</p>
+              <p class="text-sm font-medium">{{ $t('landing.footer.company') }}</p>
               <ul class="mt-3 space-y-2 text-sm text-muted">
-                <li><a href="mailto:hello@actx0.com" class="hover:text-theme-text">Contact</a></li>
+                <li><a href="mailto:hello@actx0.com" class="hover:text-theme-text">{{ $t('landing.footer.contact') }}</a></li>
                 <li><router-link to="/privacy-policy" class="hover:text-theme-text">{{ $t('landing.footer.privacy') }}</router-link></li>
                 <li><router-link to="/terms-of-use" class="hover:text-theme-text">{{ $t('landing.footer.terms') }}</router-link></li>
                 <li>
@@ -90,7 +91,7 @@ useLandingPage(rootRef, props)
           </div>
         </div>
         <div class="mt-10 border-t border-theme-border pt-6 text-center text-sm text-primary-500">
-          Copyright © 2026 Actx0. All Rights Reserved.
+          {{ $t('common.copyright') }}
         </div>
       </div>
     </footer>

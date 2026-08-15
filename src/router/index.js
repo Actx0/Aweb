@@ -7,9 +7,9 @@ const routes = [
     name: 'Landing',
     component: () => import('@/views/Landing.vue'),
     meta: {
-      title: 'Zero Latency Memory for AI Agents',
+      title: 'Memory infrastructure for AI agents',
       description:
-        'Drop-in memory infrastructure for AI agents and apps. Zero-latency context that persists across sessions and agents. Built for production.',
+        'Managed memory infrastructure for AI agents and apps. Session memories and workspace knowledge, retrieved in milliseconds. Built for production.',
     },
   },
   {

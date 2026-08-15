@@ -28,15 +28,15 @@ function closeMobile() {
       </router-link>
 
       <div class="hidden items-center gap-8 md:flex">
-        <component :is="homePage ? 'a' : 'router-link'" href="#developers" to="/#developers" class="landing-link">Developers</component>
-        <component :is="homePage ? 'a' : 'router-link'" href="#pricing" to="/#pricing" class="landing-link">Pricing</component>
-        <component :is="homePage ? 'a' : 'router-link'" href="#use-cases" to="/#use-cases" class="landing-link">Use Cases</component>
-        <a :href="statusUrl" class="landing-link">Status</a>
-        <a :href="docsUrl" class="landing-link">Docs</a>
+        <component :is="homePage ? 'a' : 'router-link'" href="#developers" to="/#developers" class="landing-link">{{ $t('landing.footer.developers') }}</component>
+        <component :is="homePage ? 'a' : 'router-link'" href="#pricing" to="/#pricing" class="landing-link">{{ $t('landing.footer.pricing') }}</component>
+        <component :is="homePage ? 'a' : 'router-link'" href="#use-cases" to="/#use-cases" class="landing-link">{{ $t('landing.footer.use_cases') }}</component>
+        <a :href="statusUrl" class="landing-link">{{ $t('landing.footer.status') }}</a>
+        <a :href="docsUrl" class="landing-link">{{ $t('landing.footer.docs') }}</a>
       </div>
 
       <div class="hidden items-center gap-3 md:flex">
-        <a :href="startUrl" class="landing-btn">Get Started</a>
+        <a :href="startUrl" class="landing-btn">{{ $t('landing.hero.cta') }}</a>
       </div>
 
       <button
@@ -53,12 +53,12 @@ function closeMobile() {
 
     <div v-show="mobileOpen" class="landing-header-menu border-t border-theme-border px-6 py-4 md:hidden">
       <div class="flex flex-col gap-4">
-        <component :is="homePage ? 'a' : 'router-link'" href="#developers" to="/#developers" class="landing-link" @click="closeMobile">Developers</component>
-        <component :is="homePage ? 'a' : 'router-link'" href="#pricing" to="/#pricing" class="landing-link" @click="closeMobile">Pricing</component>
-        <component :is="homePage ? 'a' : 'router-link'" href="#use-cases" to="/#use-cases" class="landing-link" @click="closeMobile">Use Cases</component>
-        <a :href="statusUrl" class="landing-link" @click="closeMobile">Status</a>
-        <a :href="docsUrl" class="landing-link" @click="closeMobile">Docs</a>
-        <a :href="startUrl" class="landing-btn w-fit" @click="closeMobile">Get Started</a>
+        <component :is="homePage ? 'a' : 'router-link'" href="#developers" to="/#developers" class="landing-link" @click="closeMobile">{{ $t('landing.footer.developers') }}</component>
+        <component :is="homePage ? 'a' : 'router-link'" href="#pricing" to="/#pricing" class="landing-link" @click="closeMobile">{{ $t('landing.footer.pricing') }}</component>
+        <component :is="homePage ? 'a' : 'router-link'" href="#use-cases" to="/#use-cases" class="landing-link" @click="closeMobile">{{ $t('landing.footer.use_cases') }}</component>
+        <a :href="statusUrl" class="landing-link" @click="closeMobile">{{ $t('landing.footer.status') }}</a>
+        <a :href="docsUrl" class="landing-link" @click="closeMobile">{{ $t('landing.footer.docs') }}</a>
+        <a :href="startUrl" class="landing-btn w-fit" @click="closeMobile">{{ $t('landing.hero.cta') }}</a>
       </div>
     </div>
   </header>

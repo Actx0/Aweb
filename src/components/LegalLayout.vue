@@ -24,7 +24,7 @@ onMounted(() => {
 })
 
 onUnmounted(() => {
-  document.title = 'Actx0 - Zero Latency Memory for AI Agents'
+  document.title = 'Actx0 - Memory infrastructure for AI agents'
 })
 </script>
 
