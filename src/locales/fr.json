@@ -42,10 +42,10 @@
       }
     },
     "stats": {
-      "latency_value": "Session",
-      "latency_label": "Mémoire d'agent isolée",
-      "token_value": "Espace",
-      "token_label": "Connaissances et prompts",
+      "latency_value": "<10ms",
+      "latency_label": "Latence de récupération P99",
+      "token_value": "90%",
+      "token_label": "Réduction de tokens",
       "infra_value": "Géré",
       "infra_label": "Infrastructure cloud",
       "billing_value": "Mensuel",

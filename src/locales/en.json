@@ -42,10 +42,10 @@
       }
     },
     "stats": {
-      "latency_value": "Session",
-      "latency_label": "Scoped agent memory",
-      "token_value": "Workspace",
-      "token_label": "Knowledge and prompts",
+      "latency_value": "<10ms",
+      "latency_label": "P99 retrieval latency",
+      "token_value": "90%",
+      "token_label": "Token reduction",
       "infra_value": "Managed",
       "infra_label": "Cloud infrastructure",
       "billing_value": "Monthly",
