@@ -23,7 +23,7 @@ function closeMobile() {
   <header class="landing-header sticky top-0 z-50">
     <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
       <router-link to="/" class="flex items-center gap-2.5" @click="closeMobile">
-        <img src="/logo.png" alt="actx0" class="h-8 w-auto" />
+        <img src="/logo.png" alt="Actx0" class="h-8 w-auto" />
         <span class="text-lg font-semibold tracking-tight">Actx0</span>
       </router-link>
 
