@@ -1266,7 +1266,7 @@
           "Authentifier les utilisateurs, sécuriser les comptes, prévenir les abus et faire respecter nos Conditions d'utilisation.",
           "Traiter les paiements, gérer les abonnements et envoyer des avis liés au service.",
           "Répondre au support et communiquer sur les mises à jour produit lorsque c'est approprié.",
-          "Comprendre l'usage agrégé et les performances (y compris via Vercel Web Analytics et Speed Insights lorsque les cookies d'analytique sont acceptés).",
+          "Comprendre l'usage agrégé et les performances (y compris via Google Analytics, Vercel Web Analytics et Speed Insights lorsque les cookies d'analytique sont acceptés).",
           "Respecter la loi et protéger les droits, la sécurité et les biens d'Actx0, de nos utilisateurs et du public."
         ]
       },

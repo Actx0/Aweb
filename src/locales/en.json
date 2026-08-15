@@ -1266,7 +1266,7 @@
           "Authenticate users, secure accounts, prevent abuse, and enforce our Terms of Use.",
           "Process payments, manage subscriptions, and send service-related notices.",
           "Respond to support requests and communicate about product updates when appropriate.",
-          "Understand aggregate usage and performance (including via Vercel Web Analytics and Speed Insights when analytics cookies are accepted).",
+          "Understand aggregate usage and performance (including via Google Analytics, Vercel Web Analytics, and Speed Insights when analytics cookies are accepted).",
           "Comply with law and protect the rights, safety, and property of Actx0, our users, and the public."
         ]
       },
