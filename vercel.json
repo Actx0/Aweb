@@ -1,4 +1,21 @@
 {
+  "redirects": [
+    {
+      "source": "/docs",
+      "destination": "https://docs.actx0.com/",
+      "permanent": true
+    },
+    {
+      "source": "/docs/:path*",
+      "destination": "https://docs.actx0.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/status",
+      "destination": "https://status.actx0.com/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     { "source": "/((?!sitemap\\.xml|robots\\.txt).*)", "destination": "/index.html" }
   ]

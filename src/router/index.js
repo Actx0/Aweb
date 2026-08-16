@@ -47,6 +47,7 @@ const routes = [
     name: 'Status',
     beforeEnter() {
       window.location.replace(getStatusUrl())
+      return false
     },
   },
   {
@@ -54,6 +55,7 @@ const routes = [
     name: 'Docs',
     beforeEnter() {
       window.location.replace(getDocsUrl())
+      return false
     },
   },
   {
