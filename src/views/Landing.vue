@@ -23,25 +23,31 @@
 
         <div class="reveal mx-auto mt-16 max-w-3xl">
           <div class="code-window">
-            <div class="flex items-center justify-between border-b border-white/10 bg-primary-800 px-4 py-3">
-              <div class="flex items-center gap-2">
+            <div class="flex items-center gap-2 border-b border-white/10 bg-primary-800 px-3 py-3 sm:gap-3 sm:px-4">
+              <div class="hidden shrink-0 items-center gap-2 sm:flex">
                 <span class="h-3 w-3 rounded-full bg-red-500/80" />
                 <span class="h-3 w-3 rounded-full bg-amber-500/80" />
                 <span class="h-3 w-3 rounded-full bg-emerald-500/80" />
               </div>
-              <div class="flex gap-1">
-                <button
-                  v-for="tab in codeTabs"
-                  :key="tab"
-                  type="button"
-                  class="code-tab"
-                  :class="{ active: codeTab === tab }"
-                  @click="codeTab = tab"
-                >
-                  {{ $t(`landing.code.tabs.${tab}`) }}
-                </button>
+              <div class="min-w-0 flex-1 overflow-x-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+                <div class="flex w-max gap-1">
+                  <button
+                    v-for="tab in codeTabs"
+                    :key="tab"
+                    type="button"
+                    class="code-tab"
+                    :class="{ active: codeTab === tab }"
+                    @click="codeTab = tab"
+                  >
+                    {{ $t(`landing.code.tabs.${tab}`) }}
+                  </button>
+                </div>
               </div>
-              <button type="button" class="landing-btn-outline px-3 py-1.5 text-xs" @click="copyCode">
+              <button
+                type="button"
+                class="shrink-0 rounded-full border border-white/20 bg-white px-3 py-1.5 text-xs font-medium text-primary-900 transition hover:bg-white/90"
+                @click="copyCode"
+              >
                 {{ copyLabel }}
               </button>
             </div>
