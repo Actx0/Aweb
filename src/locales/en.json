@@ -155,7 +155,7 @@
       "cta_paid": "Get started",
       "enterprise_label": "Enterprise",
       "enterprise_title": "Custom plans for larger teams",
-      "enterprise_description": "Custom limits, dedicated support, and scoped access keys.",
+      "enterprise_description": "Custom limits and dedicated support.",
       "enterprise_cta": "Talk to us",
       "plans": {
         "hobby": {
