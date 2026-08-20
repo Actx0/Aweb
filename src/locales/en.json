@@ -206,6 +206,7 @@
       "pricing": "Pricing",
       "use_cases": "Use Cases",
       "resources": "Resources",
+      "blog": "Blog",
       "docs": "Docs",
       "status": "Status",
       "support": "Support",
@@ -214,6 +215,21 @@
       "privacy": "Privacy Policy",
       "terms": "Terms of Use"
     }
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Notes on memory for agents",
+    "subtitle": "How we think about session memories, workspace knowledge, and running retrieval in production.",
+    "meta_title": "Blog · Actx0",
+    "meta_description": "Notes on agent memory, retrieval, and running AI in production — from the team building Actx0.",
+    "breadcrumb": "Blog",
+    "read": "Read",
+    "updated": "Updated",
+    "more_label": "More",
+    "more_title": "Other posts",
+    "newer": "Newer",
+    "older": "Older",
+    "page_of": "{current} / {total}"
   },
   "privacy_page": {
     "label": "Legal",

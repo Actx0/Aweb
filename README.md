@@ -21,3 +21,7 @@ npm run dev
 - Enable **Web Analytics** and **Speed Insights** in the Vercel project dashboard; both load after visitors accept analytics cookies
 - Google Analytics (`G-2YXJJ248DY`) also loads only after analytics cookie consent
 - Submit `https://actx0.com/sitemap.xml` in Google Search Console (`robots.txt` already references it)
+
+## Blog
+
+Add a Vue file in `src/views/blog/posts/` and an optional cover image at `public/covers/{slug}.jpg`. Filename is the slug (`why-ai-agents-forget.vue` → `/blog/why-ai-agents-forget`). Export `meta` with `title`, `description`, and `date`. Add the post URL to `public/sitemap.xml`.

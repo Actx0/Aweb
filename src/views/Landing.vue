@@ -283,6 +283,7 @@
             <div>
               <p class="text-sm font-medium">{{ $t('landing.footer.resources') }}</p>
               <ul class="mt-3 space-y-2 text-sm text-muted">
+                <li><router-link to="/blog" class="hover:text-theme-text">{{ $t('landing.footer.blog') }}</router-link></li>
                 <li><a :href="docsUrl" class="hover:text-theme-text">{{ $t('landing.footer.docs') }}</a></li>
                 <li><a :href="statusUrl" class="hover:text-theme-text">{{ $t('landing.footer.status') }}</a></li>
                 <li><a href="mailto:hello@actx0.com" class="hover:text-theme-text">{{ $t('landing.footer.support') }}</a></li>
@@ -312,11 +313,12 @@
 </template>
 
 <script setup>
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { highlightCode } from '@/lib/code'
 import { openCookiePreferences } from '@/lib/cookies'
 import { getDocsUrl, getStatusUrl, useStartUrl } from '@/lib/app'
+import { useReveal } from '@/lib/landing'
 import LandingNav from '@/components/LandingNav.vue'
 
 const { t } = useI18n()
@@ -325,6 +327,7 @@ const codeTab = ref('python')
 const featureTab = ref('efficiency')
 const copyLabel = ref(t('landing.copy'))
 const rootRef = ref(null)
+useReveal(rootRef)
 
 const codeTabs = ['python', 'nodejs', 'curl', 'go']
 const featureTabs = ['efficiency', 'visibility', 'control']
@@ -563,8 +566,6 @@ hits, _ := client.Memory.Search(ctx, agent.Id, session.Id, "What is my name?", 5
 fmt.Println(hits)`,
 }
 
-let revealObserver
-
 async function copyCode() {
   await navigator.clipboard.writeText(codeSamples[codeTab.value])
   copyLabel.value = t('landing.copied')
@@ -572,24 +573,4 @@ async function copyCode() {
     copyLabel.value = t('landing.copy')
   }, 1600)
 }
-
-onMounted(() => {
-  const items = rootRef.value?.querySelectorAll('.reveal') ?? []
-  revealObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible')
-          revealObserver.unobserve(entry.target)
-        }
-      })
-    },
-    { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-  )
-  items.forEach((item) => revealObserver.observe(item))
-})
-
-onUnmounted(() => {
-  revealObserver?.disconnect()
-})
 </script>

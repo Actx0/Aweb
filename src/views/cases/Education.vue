@@ -1,8 +1,5 @@
 <template>
-  <CaseLayout
-    :title="$t('cases.education.meta_title')"
-    :description="$t('cases.education.meta_description')"
-  >
+  <CaseLayout>
     <template #default="{ startUrl }">
       <section class="relative mx-auto max-w-6xl px-6 pb-20 pt-12 md:pt-16">
         <nav class="reveal mb-8 text-sm text-muted">

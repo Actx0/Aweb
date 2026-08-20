@@ -15,7 +15,7 @@ import { Analytics } from '@vercel/analytics/vue'
 import { SpeedInsights } from '@vercel/speed-insights/vue'
 import CookieConsent from '@/components/CookieConsent.vue'
 import { consentRevision, isCategoryAllowed } from '@/lib/cookies'
-import { syncGoogleAnalytics } from '@/lib/googleAnalytics'
+import { syncGoogleAnalytics } from '@/lib/analytics'
 
 const analyticsAllowed = computed(() => {
   consentRevision.value

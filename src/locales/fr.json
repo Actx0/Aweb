@@ -206,6 +206,7 @@
       "pricing": "Tarifs",
       "use_cases": "Cas d'usage",
       "resources": "Ressources",
+      "blog": "Blog",
       "docs": "Docs",
       "status": "Statut",
       "support": "Support",
@@ -214,6 +215,21 @@
       "privacy": "Politique de confidentialité",
       "terms": "Conditions d'utilisation"
     }
+  },
+  "blog": {
+    "label": "Blog",
+    "title": "Notes sur la mémoire des agents",
+    "subtitle": "Comment nous concevons les mémoires de session, la connaissance d'espace de travail, et la recherche en production.",
+    "meta_title": "Blog · Actx0",
+    "meta_description": "Notes sur la mémoire des agents, la recherche et l'IA en production — par l'équipe Actx0.",
+    "breadcrumb": "Blog",
+    "read": "Lire",
+    "updated": "Mis à jour",
+    "more_label": "Suite",
+    "more_title": "Autres articles",
+    "newer": "Plus récents",
+    "older": "Plus anciens",
+    "page_of": "{current} / {total}"
   },
   "privacy_page": {
     "label": "Mentions légales",

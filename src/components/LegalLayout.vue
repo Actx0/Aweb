@@ -1,30 +1,16 @@
 <script setup>
-import { onMounted, onUnmounted } from 'vue'
+import { onMounted } from 'vue'
 import LandingNav from '@/components/LandingNav.vue'
 
-const props = defineProps({
+defineProps({
   label: { type: String, required: true },
   title: { type: String, required: true },
   description: { type: String, required: true },
   updated: { type: String, required: true },
 })
 
-function updatePageMeta() {
-  document.title = `${props.title} · Actx0`
-  document.querySelector('meta[name="description"]')?.setAttribute('content', props.description)
-  document.querySelector('meta[property="og:title"]')?.setAttribute('content', props.title)
-  document.querySelector('meta[property="og:description"]')?.setAttribute('content', props.description)
-  document.querySelector('meta[name="twitter:title"]')?.setAttribute('content', props.title)
-  document.querySelector('meta[name="twitter:description"]')?.setAttribute('content', props.description)
-}
-
 onMounted(() => {
   window.scrollTo({ top: 0, left: 0 })
-  updatePageMeta()
-})
-
-onUnmounted(() => {
-  document.title = 'Actx0 - Memory infrastructure for AI agents'
 })
 </script>
 

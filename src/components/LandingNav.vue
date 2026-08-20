@@ -31,6 +31,7 @@ function closeMobile() {
         <component :is="homePage ? 'a' : 'router-link'" href="#developers" to="/#developers" class="landing-link">{{ $t('landing.footer.developers') }}</component>
         <component :is="homePage ? 'a' : 'router-link'" href="#pricing" to="/#pricing" class="landing-link">{{ $t('landing.footer.pricing') }}</component>
         <component :is="homePage ? 'a' : 'router-link'" href="#use-cases" to="/#use-cases" class="landing-link">{{ $t('landing.footer.use_cases') }}</component>
+        <router-link to="/blog" class="landing-link">{{ $t('landing.footer.blog') }}</router-link>
         <a :href="statusUrl" class="landing-link">{{ $t('landing.footer.status') }}</a>
         <a :href="docsUrl" class="landing-link">{{ $t('landing.footer.docs') }}</a>
       </div>
@@ -56,6 +57,7 @@ function closeMobile() {
         <component :is="homePage ? 'a' : 'router-link'" href="#developers" to="/#developers" class="landing-link" @click="closeMobile">{{ $t('landing.footer.developers') }}</component>
         <component :is="homePage ? 'a' : 'router-link'" href="#pricing" to="/#pricing" class="landing-link" @click="closeMobile">{{ $t('landing.footer.pricing') }}</component>
         <component :is="homePage ? 'a' : 'router-link'" href="#use-cases" to="/#use-cases" class="landing-link" @click="closeMobile">{{ $t('landing.footer.use_cases') }}</component>
+        <router-link to="/blog" class="landing-link" @click="closeMobile">{{ $t('landing.footer.blog') }}</router-link>
         <a :href="statusUrl" class="landing-link" @click="closeMobile">{{ $t('landing.footer.status') }}</a>
         <a :href="docsUrl" class="landing-link" @click="closeMobile">{{ $t('landing.footer.docs') }}</a>
         <a :href="startUrl" class="landing-btn w-fit" @click="closeMobile">{{ $t('landing.hero.cta') }}</a>

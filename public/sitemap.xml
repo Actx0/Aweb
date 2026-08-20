@@ -43,6 +43,30 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://actx0.com/blog</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://actx0.com/blog/why-ai-agents-forget</loc>
+    <lastmod>2026-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://actx0.com/blog/session-memory-vs-workspace-knowledge</loc>
+    <lastmod>2026-08-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://actx0.com/blog/retrieve-dont-replay</loc>
+    <lastmod>2026-08-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://actx0.com/privacy-policy</loc>
     <lastmod>2026-08-15</lastmod>
     <changefreq>yearly</changefreq>

@@ -508,6 +508,92 @@
     @apply mt-3 list-disc space-y-1.5 pl-5;
   }
 
+  .landing-page .blog-tag {
+    @apply rounded-full border border-theme-border bg-theme-hover px-2.5 py-0.5 text-xs font-medium text-theme-textLight;
+  }
+
+  .landing-page .blog-cover {
+    @apply aspect-[16/9] overflow-hidden bg-theme-hover;
+  }
+
+  .landing-page .blog-cover img {
+    @apply h-full w-full object-cover transition duration-500 group-hover:scale-[1.03];
+  }
+
+  .landing-page .blog-cover-hero {
+    @apply rounded-2xl border border-theme-border shadow-card;
+  }
+
+  .landing-page .blog-cover-hero img {
+    transform: none;
+  }
+
+  .landing-page .blog-cover-fallback {
+    @apply flex h-full items-end p-6 text-xs font-semibold uppercase tracking-[0.2em] text-primary-600;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(55, 53, 47, 0.08), transparent),
+      linear-gradient(rgba(55, 53, 47, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(55, 53, 47, 0.04) 1px, transparent 1px);
+    background-size: auto, 48px 48px, 48px 48px;
+  }
+
+  .landing-page .blog-prose {
+    @apply space-y-5 text-base leading-relaxed text-theme-textLight;
+  }
+
+  .landing-page .blog-prose h2 {
+    @apply pt-6 text-2xl font-semibold tracking-tight text-theme-text;
+  }
+
+  .landing-page .blog-prose h3 {
+    @apply pt-4 text-xl font-semibold tracking-tight text-theme-text;
+  }
+
+  .landing-page .blog-prose p + p {
+    @apply mt-4;
+  }
+
+  .landing-page .blog-prose ul,
+  .landing-page .blog-prose ol {
+    @apply space-y-2 pl-5;
+  }
+
+  .landing-page .blog-prose ul {
+    @apply list-disc;
+  }
+
+  .landing-page .blog-prose ol {
+    @apply list-decimal;
+  }
+
+  .landing-page .blog-prose li {
+    @apply pl-1;
+  }
+
+  .landing-page .blog-prose a {
+    @apply font-medium text-theme-text underline decoration-theme-border underline-offset-4 hover:decoration-primary-500;
+  }
+
+  .landing-page .blog-prose strong {
+    @apply font-semibold text-theme-text;
+  }
+
+  .landing-page .blog-prose em {
+    @apply italic;
+  }
+
+  .landing-page .blog-prose code {
+    @apply rounded bg-theme-hover px-1.5 py-0.5 font-mono text-[0.9em] text-theme-text;
+  }
+
+  .landing-page .blog-prose pre {
+    @apply overflow-x-auto rounded-xl border border-theme-border bg-primary-900 p-4 font-mono text-[13px] leading-6 text-white/90;
+  }
+
+  .landing-page .blog-prose pre code {
+    @apply bg-transparent p-0 text-inherit;
+  }
+
   .landing-page .text-muted {
     @apply text-theme-textLight;
   }
